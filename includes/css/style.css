@@ -1,0 +1,741 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800&display=swap');
+
+:root {
+    --main-accent-color: #03bad5;
+    --section-title-color-dark: #37474f;
+    --body-color: #495057;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.img-logo {
+    display: block;
+    max-width:250px;
+    max-height:100px;
+    width: auto;
+    height: auto;
+    
+  }
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 800;
+}
+
+.btn-white {
+    border: 2px solid #ffffff;
+    border-radius: 2rem;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: lowercase;
+    font-size: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.btn-white:hover {
+    background-color: #ffffff;
+    color: var(--main-accent-color);
+    border: 2px solid #ffffff;
+
+}
+
+/**********************    section style    ***********************/
+/* estilos aplicados ao estilos globais dos titulos das secções */
+
+.section-title {
+    position: relative;
+}
+
+h2.section-title-heading {
+    color: var(--section-title-color-dark);
+    padding-top: 2rem;
+    text-transform: uppercase;  
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+/* seletor :after é aplicados depois da classe especificada */
+.section-title::after {
+    content: '';
+    position: absolute;
+    border-bottom: 2px solid var( --main-accent-color);
+    width: 8%;
+    top: 80px;
+}
+
+/* border colorida quando sobrepomos o cursor do titulos */
+.section-title:hover::after {
+        width: 12%;
+        transition: all 0.6s ease-out;
+        -webkit-transition: all 0.6s ease-out;
+        -moz-transition: all 0.6s ease-out;
+        -o-transition: all 0.6s ease-out;
+}
+
+#about .section-title::after {
+    content: '';
+    position: absolute;
+    border-bottom: 2px solid var( --main-accent-color);
+    width: 8%;
+    top: 70px;
+}
+
+/* border colorida quando sobrepomos o cursor do titulos */
+#about .section-title:hover::after {
+        width: 12%;
+        transition: all 0.6s ease-out;
+        -webkit-transition: all 0.6s ease-out;
+        -moz-transition: all 0.6s ease-out;
+        -o-transition: all 0.6s ease-out;
+}
+
+
+/**********************    navigation style    ***********************/
+
+.narbar {
+    padding-top: 1.2rem;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: #ffffff;
+    text-transform:  uppercase;
+    font-weight: 600;
+    font-size: .85rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #27778b;    
+}
+
+.navbar.active {
+    background-color: rgba(0, 172, 217, 0.7);
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 1);
+}
+
+/**********************    hero style    ***********************/
+
+#hero {
+    background-image: linear-gradient(to right, rgba(0,172,217,0.62), rgba(105,240,174,0.52)), url(../images/equipa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 9rem;
+    display: block;
+    padding-bottom: 20rem;
+    position: relative;
+}
+
+#hero::after {
+    content: '';
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 10%;
+    transform: skewY(-2deg);
+    transform-origin: bottom right;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.main-hero-content h1 {
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: .11rem;
+}
+
+.main-hero-content p {
+    color: #ffffff;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+
+.image-box img {
+    position: absolute;
+    top: 2rem;
+    z-index: 1;
+    width: 60%;
+    border-radius: 20%;  
+}
+
+.image-box-logo {
+    vertical-align: middle;
+    border-style: none;
+    width: 33%;
+    position: relative;
+    top: 3rem;
+    left: 3.5rem;
+    z-index: 1;
+}  
+
+
+/**********************    about style    ***********************/
+
+#about i {
+    color: var(--main-accent-color);
+}
+
+#about h3 {
+    color: var(--section-title-color-dark);
+    font-weight: 600;   
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding-top: 1rem;
+}
+
+#about h4 {
+    color: var(--section-title-color-dark);
+    font-weight: 600;   
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+#about p {
+    color: var(--body-color);  
+    font-size: 1rem;
+    line-height: 1.7rem;
+}
+
+#about {
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+#about img {
+    display: block;
+    margin:0 auto;
+}
+
+#about .destaque-block img {
+    width: 75%;
+    padding-bottom: 1rem;
+}
+
+.destaque-img-center {
+    position: absolute;
+    top: 5rem;
+    width: 92%;
+}
+
+#about .destaque-block {
+    text-align: center;
+}
+
+#about .destaque-block h3 {
+    color: var(--section-title-color-dark);
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+#about .destaque-block p {
+    color: var(--body-color);  
+    font-size: 1rem;
+    line-height: 1.7rem;
+}
+
+#about::after {
+    content: '';
+    position: absolute;
+    background-color: #fafafa;
+    width: 100%;
+    height: 2%;
+    transform: skewY(-2deg);
+    transform-origin: bottom right;
+    bottom: -50px;
+    right: 0;
+    left: 0;
+}
+
+
+/**********************    destaque style    ***********************/
+
+#destaque {
+    background-color: #fafafa;
+    padding-bottom: 6rem;
+    margin-top: 3rem;
+}
+
+#destaque img {
+    display: block;
+    margin:0 auto;
+}
+
+#destaque .destaque-block img {
+    width: 75%;
+    padding-bottom: 1rem;
+}
+
+.destaque-img-center {
+    position: absolute;
+    top: 5rem;
+    width: 92%;
+}
+
+#destaque .destaque-block {
+    text-align: center;
+}
+
+#destaque .destaque-block h3 {
+    color: var(--section-title-color-dark);
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+#destaque .destaque-block p {
+    color: var(--body-color);  
+    font-size: 1rem;
+    line-height: 1.7rem;
+}
+
+#destaque ul li {
+    list-style: none;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+/**********************    federados style    ***********************/
+
+#federados {
+    background-image: linear-gradient(to right, rgba(0,172,217,0.62), rgba(105,240,174,0.52));
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 6rem;
+    position: relative;
+}
+
+#federados::before {
+    content: '';
+    position: absolute;
+    background-color: #fafafa;
+    width: 100%;
+    height: 12%;
+    transform: skewY(-2deg);
+    transform-origin: top right;
+    top: -7rem;
+    right: 0;
+    left: 0;
+}
+
+#federados .federados-title h2{
+    padding-top: 5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+#federados .federados-title h3{
+    padding-top: 2rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+#federados .federados-title p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    margin-top: 1rem;
+}
+
+#federados .federados-title .federados-btns {
+    margin-top: 4rem;
+}
+
+#federados .federados-title .federados-btns a {
+    border: 2px solid #ffffff;
+    border-radius: 2rem;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: .8rem 2rem;
+}
+
+#federados .federados-title .federados-btns a:hover {
+   background-color: #ffffff;
+   color: var(--main-accent-color);
+   border: 2px solid #ffffff;
+   text-decoration: none;
+}
+
+#federados .box-table {
+    background-color: #ffffff;
+    box-shadow: -1px 0px 12px 4px rgba(0, 0, 0, 0.24);
+    -webkit-box-shadow: -1px 0px 12px 4px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: -1px 0px 12px 4px rgba(0, 0, 0, 0.24);
+    -o-box-shadow: -1px 0px 12px 4px rgba(0, 0, 0, 0.24);
+    margin-right: 1rem; 
+    width: calc(90% / 3);
+    padding-left: 0;
+    padding-right: 0 ;
+}
+
+#federados .box-table .table-header h4 {
+    color: var(--section-title-color-dark);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#federados .box-table .table-content {
+    margin-top: 2rem;
+}
+
+#federados .box-table .table-content ul li {
+    list-style: none;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-weight: 600;
+}
+
+#federados .box-table .table-header h4 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#federados .box-table:nth-child(1) .table-header {
+    background-image: linear-gradient(to right, rgba(0,172,217,0.62), rgba(105,240,174,0.52)), url('../images/meninas2.webp');
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    color: #ffffff;
+    position: relative;
+    background-size: 100%;
+    
+}
+
+#federados .box-table:nth-child(2) .table-header {
+    background-image: linear-gradient(to right, rgba(0,172,217,0.62), rgba(105,240,174,0.52)), url('../images/meninos.jpg');
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    color: #ffffff;
+    position: relative;
+    background-size: 100%;
+}
+
+
+/**********************    treinos style    ***********************/
+
+#treinos {
+   padding-bottom: 7rem;
+   position: relative;
+}
+
+#treinos::before {
+    content: '';
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 5%;
+    transform: skewY(-1deg);
+    transform-origin: top right;
+    top: -3rem;
+    right: 0;
+    left: 0;
+}
+
+#treinos .section-title {
+    margin-bottom: 1rem;
+}
+
+#treinos .box-table {
+    background-color: #ffffff;
+    box-shadow: -1px 0px 12px 4px rgba(0, 0, 0, 0.24);
+    -webkit-box-shadow: -1px 0px 12px 4px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: -1px 0px 12px 4px rgba(0, 0, 0, 0.24);
+    -o-box-shadow: -1px 0px 12px 4px rgba(0, 0, 0, 0.24);
+    margin-right: 1rem; 
+    width: calc(90% / 3);
+    padding-left: 0;
+    padding-right: 0 ;
+}
+
+#treinos .box-table .table-header h4 {
+    color: var(--section-title-color-dark);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#treinos .box-table .table-content {
+    margin-top: 2rem;
+}
+
+#treinos .box-table .table-content ul li {
+    list-style: none;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-weight: 600;
+}
+
+
+#treinos .table-header {
+    margin: 0;
+    width: 100%;
+}
+
+#treinos .box-table .table-header {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+#treinos .box-table:nth-child(1) .table-header {
+    background-image: linear-gradient(to right, rgba(0,172,217,0.62), rgba(105,240,174,0.52)), url('../images/miudos.jpg');
+    /* background: linear-gradient(to right, rgba(235, 136, 7, 0.62), rgba(233, 229, 8, 0.52)); */
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    color: #ffffff;
+    position: relative;
+}
+
+#treinos .box-table:nth-child(1) .table-header h4 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#treinos .box-table:nth-child(2) .table-header {
+    background-image: linear-gradient(to right, rgba(0,172,217,0.62), rgba(105,240,174,0.52)), url('../images/mata_medos.webp');
+    /* background: linear-gradient(to right, rgba(0,172,217,0.62), rgba(105,240,174,0.52)); */
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    color: #ffffff;
+    position: relative;
+}
+
+#treinos .box-table:nth-child(2) .table-header h4 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#treinos .box-table:nth-child(3) .table-header {
+    background-image: linear-gradient(to right, rgba(0,172,217,0.62), rgba(105,240,174,0.52)), url('../images/parquedapaz.jpg');
+    /* background: linear-gradient(to right, rgba(0,172,217,0.62), rgba(105,240,174,0.52)); */
+    padding-top: 6rem;
+    padding-bottom: 6.2rem;
+    color: #ffffff;
+    position: relative;
+}
+
+#treinos .box-table:nth-child(3) .table-header h4 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+
+/**********************    protocolos style    ***********************/
+
+#protocolos {
+    background-image: linear-gradient(to right, rgba(0,172,217,0.62), rgba(105,240,174,0.52)), url(../images/miudos2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 6rem;
+    position: relative;
+}
+
+#protocolos::before {
+    content: '';
+    position: absolute;
+    background-color: #fafafa;
+    width: 100%;
+    height: 12%;
+    transform: skewY(-2deg);
+    transform-origin: top right;
+    top: -7rem;
+    right: 0;
+    left: 0;
+}
+
+#protocolos .protocolos-title h2{
+    padding-top: 5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+#protocolos .protocolos-title h3{
+    padding-top: 2rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+#protocolos .protocolos-title p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
+
+
+#protocolos .protocolos-title .protocolos-btns a:hover {
+   background-color: #ffffff;
+   color: var(--main-accent-color);
+   border: 2px solid #ffffff;
+   text-decoration: none;
+}
+
+#protocolos .box-table {
+    background-color: #ffffff;
+    box-shadow: -1px 0px 12px 4px rgba(0, 0, 0, 0.24);
+    -webkit-box-shadow: -1px 0px 12px 4px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: -1px 0px 12px 4px rgba(0, 0, 0, 0.24);
+    -o-box-shadow: -1px 0px 12px 4px rgba(0, 0, 0, 0.24);
+    margin-right: 1rem; 
+    width: calc(90% / 3);
+    padding-left: 0;
+    padding-right: 0 ;
+}
+
+#protocolos .box-table  .table-header h4 {
+    color: var(--section-title-color-dark);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#protocolos .box-table .table-content {
+    margin-top: 1rem;
+}
+
+
+#protocolos .box-table .table-content p{
+    list-style: none;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-weight: 600;
+}
+
+#protocolos .box-table .table-header h4 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#protocolos .box-table .table-header {
+    background-image: linear-gradient(to right, rgba(0,172,217,0.62), rgba(105,240,174,0.52));
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #ffffff;
+    position: relative;
+    background-size: 100%;
+}
+
+#protocolos .box-table:nth-child(3) .table-header {
+    padding-bottom: 1.2rem;
+}
+
+
+/**********************    contact style    ***********************/
+
+#contact {
+    background-color: #f0f1f3;
+    padding-bottom: 5rem;
+    padding-top: 2rem;
+    position: relative;
+}
+
+#contact::before {
+    content: '';
+    position: absolute;
+    background-color: #f0f1f3;
+    width: 100%;
+    height: 9%;
+    transform: skewY(-2deg);
+    transform-origin: top right;
+    top: -3.2rem;
+    right: 0;
+    left: 0;
+}
+
+.btn-contact {
+    background: linear-gradient(to right, rgba(0,172,217,0.62), rgba(105,240,174,0.52));
+    padding: .5rem 2.2rem;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 2rem;
+    border: none;
+}
+
+.btn-contact:hover {
+    background: #ffffff;
+    color: rgba(0, 172, 217, 0.62);
+    border: 2px solid rgba(0, 172, 217, 0.62);
+}
+
+#contact .contact-details ul li {
+    padding-bottom: .8rem;
+}
+
+#contact .contact-details ul li  i {
+    color: rgba(0, 172, 217, 0.62);
+}
+
+/**********************    footer style    ***********************/
+
+#footer {
+    background-color: #2b323f;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+#footer::before {
+    content: '';
+    position: absolute;
+    background-color: #2b323f;
+    width: 100%;
+    height: 18%;
+    transform: skewY(-1deg);
+    transform-origin: top right;
+    top: -3rem;
+    right: 0;
+    left: 0;
+}
+
+#footer .footer-logo img {
+    margin-top: -4.5rem;
+    width: 25%;
+    margin-left: 15rem;
+}
+
+#footer .social-icons {
+    margin-top: -1rem;
+}
+
+#footer .social-icons a {
+    margin-right: 10px;
+    color: #8d8c8c;
+}
+
+.copyright p {
+    margin-top: 1rem;
+    color: #ffffff;
+    font-size: .9rem;
+}

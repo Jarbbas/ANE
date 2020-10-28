@@ -1,0 +1,319 @@
+@media(max-width: 993px) {
+
+        .navbar-collapse {
+            background: rgba(0, 172, 217, 1);
+            padding-left: 1rem;
+        }
+
+        .image-box {
+            display: none;
+        }
+
+        .image-box-logo {
+            display: none;
+        }
+}
+
+@media(max-width: 768px) {
+
+        /*hero sction*/
+
+        .main-hero-content h1 p {
+            text-align: center;
+        }
+
+        .hero-buttons {
+            text-align: center;
+        }
+
+        .image-box {
+            display: none;
+        }
+
+        .image-box-logo {
+            display: none;
+        }
+
+        /*about */
+
+        #about::after {
+            content: '';
+            position: absolute;
+            background-color: #fafafa;
+            width: 100%;
+            height: 2%;
+            transform: skewY(-2deg);
+            transform-origin: bottom right;
+            bottom: -8rem;
+            right: 0;
+            left: 0;
+        }
+
+        /*destaque*/
+
+        #destaque h3{
+            padding-bottom: 2rem;
+            padding-top: 2rem;
+        }
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+            padding-bottom: 2rem;
+        }
+
+        /*federados*/
+
+        #federados .box-table {
+            width: calc(80%/1);
+            margin-top: 2rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /*treinos */
+
+        #treinos::before {
+            content: '';
+            position: absolute;
+            background-color: #ffffff;
+            width: 100%;
+            height: -8%;
+            transform: skewY(-1deg);
+            transform-origin: top right;
+            top: 1rem;
+            right: 0;
+            left: 0;
+        }
+
+        #treinos p {
+            margin-top: 0;
+            margin-bottom: 3rem;
+        }
+
+        /*contact sction*/
+        #contact .adress {
+            margin-top: 2rem;
+        }
+
+        #contact {
+            background-color: #f0f1f3;
+            padding-bottom: 5rem;
+            padding-top: 3rem;
+            position: relative;
+        }
+
+        /*treinos sction*/
+        #treinos .box-table {
+            width: calc(80%/1);
+            margin-top: 2rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #treinos .box-table:nth-child(1){
+            margin-top: -2rem;
+        }
+
+        #treinos .box-table:nth-child(2) .table-header {
+            background-size: 104%;
+        }
+
+        /*federados*/
+
+        #federados::before {
+            content: '';
+            position: absolute;
+            background-color: #fafafa;
+            width: 100%;
+            height: 9%;
+            transform: skewY(-2deg);
+            transform-origin: top right;
+            top: -7rem;
+            right: 0;
+            left: 0;
+        }
+
+        #federados .box-table:nth-child(1) .table-header {
+            background-size: 276%;
+        }
+
+        #federados .box-table:nth-child(2) .table-header {
+            background-size: 276%;
+        }
+
+        /*protocolos*/
+        /*treinos sction*/
+        #protocolos .box-table {
+            width: calc(80%/2);
+            margin-top: 2rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        /*contact sction*/
+        #footer-log {
+            margin-top: -1rem;
+        }
+
+        #footer::before {
+            content: '';
+            position: absolute;
+            background-color: #2b323f;
+            width: 100%;
+            height: 19%;
+            transform: skewY(-1deg);
+            transform-origin: top right;
+            top: -3rem;
+            right: 0;
+            left: 0;
+        }
+}
+
+@media(max-width: 411px) {
+
+    body {
+        width: 411px;
+        margin: 0;
+        padding-right: 1.5rem;
+    }
+
+    h1 {
+        line-height: 4rem;
+        font-size: 3rem;
+    }
+
+    p {
+        text-align: center;
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+    
+    /*inicio*/
+
+    .main-hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid, .navbar-expand-lg>.container-lg, .navbar-expand-lg>.container-md, .navbar-expand-lg>.container-sm, .navbar-expand-lg>.container-xl {
+        padding-right: 100px;
+        padding-left: 0;
+    }
+
+    #hero::after {
+        height: 5%;
+    }
+
+    /*about*/
+
+    #about .section-title::after {
+        width: 40%;
+        top: 70px;
+    }
+    #about h4 {
+        padding-left: 0.5rem;
+    }
+
+    /*destaque*/
+        
+    #destaque {
+        background-color: #fafafa;
+        padding-bottom: 0rem;
+        margin-top: 0rem;
+    }
+
+    #destaque .section-title::after {
+        width: 40%;
+        top: 75px;
+    }
+
+    #treinos .box-table:nth-child(1) .table-header {
+        background-size: 105%;
+        padding-top: 58px;
+    padding-bottom: 6px; 
+    }
+
+    #treinos .box-table:nth-child(2) .table-header {
+        padding-top: 58px;
+        padding-bottom: 6px; 
+    }
+
+    #treinos .box-table:nth-child(3) .table-header {
+        background-size: 105%;
+        padding-top: 58px;
+    padding-bottom: 6px; 
+    }
+
+    
+    h2.section-title-heading {
+        text-align: center;
+        color: var(--section-title-color-dark);
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.9rem;
+        align-content: center;
+    }
+
+    .section-title::after {
+        width: 40%;
+        top: 113px;
+    }
+
+    /*federados*/
+    #federados::before {
+        content: '';
+        position: absolute;
+        background-color: #ffffff;
+        width: 100%;
+        height: 2%;
+        transform: skewY(-1deg);
+        transform-origin: top right;
+        top: -1rem;
+        right: 0;
+        left: 0;
+    }
+
+    #federados .box-table {
+        width: calc(80%/1);
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*treinos*/
+    #treinos .section-title::after {
+        width: 25%;
+        top: 71px;
+    }
+
+    
+    #treinos .h2 {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    #treinos::before {
+        top: -2.5rem;
+    }
+
+    /*contacto*/
+
+    #contact::before {
+        height: 6%;
+    }
+    #contact .section-title::after {
+        width: 40%;
+        top: 109px;
+    }
+
+    /*Footer*/
+
+    #footer::before {
+        height: 23%;
+    }
+    #footer .footer-logo img {
+        margin-top: -6.5rem;
+        width: 29%;
+        margin-left: 7.5rem;
+    }
+}
