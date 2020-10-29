@@ -142,9 +142,13 @@
         }
 
         /*protocolos*/
-        /*treinos sction*/
+
+        #protocolos::before {
+            height: 6%;
+        }
+
         #protocolos .box-table {
-            width: calc(80%/2);
+            width: calc(80%/1);
             margin-top: 2rem;
             margin-left: auto;
             margin-right: auto;
@@ -157,25 +161,21 @@
         }
 
         #footer::before {
-            content: '';
-            position: absolute;
-            background-color: #2b323f;
-            width: 100%;
-            height: 19%;
-            transform: skewY(-1deg);
-            transform-origin: top right;
-            top: -3rem;
-            right: 0;
-            left: 0;
+            height: 15%;
+            top: -2rem;
+        }
+
+        #footer .footer-logo img {
+            margin-left: 11rem;
         }
 }
 
-@media(max-width: 411px) {
+@media(max-width: 380px) {
 
-    body {
-        width: 411px;
+    body { 
+        width: 127%;
         margin: 0;
-        padding-right: 1.5rem;
+        padding: 0;
     }
 
     h1 {
@@ -188,16 +188,22 @@
         padding-right: 2rem;
         padding-left: 2rem;
     }
-    
-    /*inicio*/
-
-    .main-hero-content p {
-        font-size: 1.1rem;
-    }
 
     .navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid, .navbar-expand-lg>.container-lg, .navbar-expand-lg>.container-md, .navbar-expand-lg>.container-sm, .navbar-expand-lg>.container-xl {
-        padding-right: 100px;
-        padding-left: 0;
+        padding-right: 17%;
+         padding-left: 0; 
+    }
+    
+    .main-hero-content h1 {
+        padding-right: 3rem;
+    }
+
+    .main-hero-content p {
+        font-size: 1.1rem;     
+    }
+
+    .hero-buttons{
+        padding-right: 1rem;
     }
 
     #hero::after {
@@ -211,7 +217,7 @@
         top: 70px;
     }
     #about h4 {
-        padding-left: 0.5rem;
+        padding-left: 2.5rem;
     }
 
     /*destaque*/
@@ -246,12 +252,7 @@
 
     
     h2.section-title-heading {
-        text-align: center;
-        color: var(--section-title-color-dark);
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 1.9rem;
-        align-content: center;
+        font-size: 1.7rem;
     }
 
     .section-title::after {
@@ -309,11 +310,14 @@
     /*Footer*/
 
     #footer::before {
-        height: 23%;
+        height: 8%;
+        top: -1rem;
     }
+
     #footer .footer-logo img {
-        margin-top: -6.5rem;
-        width: 29%;
-        margin-left: 7.5rem;
+        margin-top: -6rem;
+        width: 28%;
+        margin-left: 9rem;
     }
+
 }
