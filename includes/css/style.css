@@ -11,13 +11,17 @@
     padding: 0;
 }
 
+a {
+    text-decoration:none;
+    color: var(--body-color);
+}
+
 .img-logo {
     display: block;
     max-width:250px;
     max-height:100px;
     width: auto;
-    height: auto;
-    
+    height: auto;   
   }
 
 body {
@@ -554,6 +558,17 @@ h2.section-title-heading {
     padding-bottom: 6rem;
     position: relative;
 }
+
+#protocolos a {
+    text-decoration: none;
+    }
+
+#protocolos a:hover {
+    color: white;
+    text-decoration: underline;
+    border-bottom: 1px solid white;
+    }
+    
 
 #protocolos::before {
     content: '';
