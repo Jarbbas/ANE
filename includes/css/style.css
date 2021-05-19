@@ -63,6 +63,25 @@ h1 {
 .carousel {
     margin-bottom: 4rem;
   }
+
+  .image-slide {
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .first-slide {
+    background-image: linear-gradient(to right, rgba(0,172,217,0.62), rgba(105,240,174,0.52)), url(../images/cortaMato_cheque.jpg);
+  }
+
+  .third-slide {
+    background-image: linear-gradient(to right, rgba(0,172,217,0.62), rgba(105,240,174,0.52)), url(../images/taçaTAS.jpg);
+  }
+
+  .first-slide:hover, .third-slide:hover {
+    opacity: 0.3;
+  }
+
   /* Since positioning the image, we need to help out the caption */
   .carousel-caption {
     bottom: 3rem;
@@ -82,6 +101,38 @@ h1 {
     height: 32rem;
   }
 
+
+/********************** HOVER GENERAL ***********************/
+.hover {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 60%;
+  }
+  
+  .hover-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    transition: all 0.4s;
+  }
+  
+  .hover img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+  }
+  
+  .hover-content {
+    position: relative;
+    z-index: 99;
+  }
+
+
 /**********************    section style    ***********************/
 /* estilos aplicados ao estilos globais dos titulos das secções */
 
@@ -92,6 +143,7 @@ h1 {
 h2.section-title-heading {
     color: var(--section-title-color-dark);
     padding-top: 2rem;
+    text-align: center;
     text-transform: uppercase;  
     font-weight: 700;
     font-size: 1.8rem;
@@ -355,10 +407,10 @@ h2.section-title-heading {
     position: absolute;
     background-color: #f8f1f1;
     width: 100%;
-    height: 12%;
+    height: 18%;
     transform: skewY(-2deg);
     transform-origin: top right;
-    top: -7rem;
+    top: -6rem;
     right: 0;
     left: 0;
 }
@@ -370,7 +422,7 @@ h2.section-title-heading {
     font-weight: 700;
     font-size: 1.8rem;
 }
-
+  
 #federados .federados-title h3{
     padding-top: 2rem;
     color: #ffffff;
@@ -386,85 +438,130 @@ h2.section-title-heading {
     line-height: 1.7rem;
     margin-top: 1rem;
 }
-
-#federados .federados-title .federados-btns {
-    margin-top: 4rem;
+/*********************** Federados Femininos cards ***********************/
+.federadosFeminios img {
+    width: 110%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .federadosFeminios .hover-overlay {
+    background-image: linear-gradient(to right, rgba(0,172,217,0.62), rgba(105,240,174,0.52)), url('../images/meninas2.webp');
+    z-index: 90;
+  }
+  
+  .federadosFeminios-title {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    padding: 3rem;
+    z-index: 99;
+  }
+  
+  .federadosFeminios-description {
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
+    text-align: left;
+    border-left: 3px solid #fff;
+    padding: 0 1rem;
+    z-index: 99;
+    transform: translateX(-1.5rem);
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  
+  @media (min-width: 992px) {
+    .federadosFeminios-description {
+      width: 50%;
+    }
+  }
+  
+  .federadosFeminios:hover img {
+    width: 100%;
+  }
+  
+  .federadosFeminios:hover::after {
+    opacity: 1;
+    transform: none;
+  }
+  
+  .federadosFeminios:hover .federadosFeminios-description {
+    opacity: 1;
+    transform: none;
+  }
+  
+  .federadosFeminios:hover .hover-overlay {
+      background-image: linear-gradient(to right, rgba(0,172,217,0.62), rgba(105,240,174,0.52));
+  }
+  .federadosFeminios:hover .federadosFeminios-title {
+    display: none;
 }
+  
+  /*********************** Federados Masculinos cards ***********************/
+.federadosMasculinos img {
+    width: 110%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .federadosMasculinos .hover-overlay {
+    background-image: linear-gradient(to right, rgba(0,172,217,0.62), rgba(105,240,174,0.52)), url('../images/meninos.jpg');
+    z-index: 90;
+  }
+  
+  .federadosMasculinos-title {
+    position: absolute;
+    bottom: 0;
+    right: 7px;
+    padding: 3rem;
+    z-index: 99;
+  }
 
-#federados .federados-title .federados-btns a {
-    border: 2px solid #ffffff;
-    border-radius: 2rem;
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 1rem;
-    padding: .8rem 2rem;
-}
+  .federadosMasculinos-description {
+    position: absolute;
+    top: 2rem;
+    left: 16rem;
+    text-align: right;
+    border-right: 3px solid #fff;
+    padding: 0 1rem;
+    z-index: 99;
+    transform: translateX(-1.5rem);
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  
+  @media (min-width: 992px) {
+    .federadosMasculinos-description {
+      width: 50%;
+    }
+  }
+  
+  .federadosMasculinos:hover img {
+    width: 100%;
+  }
+  
+  .federadosMasculinos:hover::after {
+    opacity: 1;
+    transform: none;
+  }
+  
+  .federadosMasculinos:hover .federadosMasculinos-description {
+    opacity: 1;
+    transform: none;
+  }
+   
+  
+  .federadosMasculinos:hover .hover-overlay {
+      background-image: linear-gradient(to right, rgba(0,172,217,0.62), rgba(105,240,174,0.52));
+  }
 
-#federados .federados-title .federados-btns a:hover {
-   background-color: #ffffff;
-   color: var(--main-accent-color);
-   border: 2px solid #ffffff;
-   text-decoration: none;
-}
-
-#federados .box-table {
-    background-color: #ffffff;
-    box-shadow: -1px 0px 12px 4px rgba(0, 0, 0, 0.24);
-    -webkit-box-shadow: -1px 0px 12px 4px rgba(0, 0, 0, 0.24);
-    -moz-box-shadow: -1px 0px 12px 4px rgba(0, 0, 0, 0.24);
-    -o-box-shadow: -1px 0px 12px 4px rgba(0, 0, 0, 0.24);
-    margin-right: 1rem; 
-    width: calc(90% / 3);
-    padding-left: 0;
-    padding-right: 0 ;
-}
-
-#federados .box-table .table-header h4 {
-    color: var(--section-title-color-dark);
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
-#federados .box-table .table-content {
-    margin-top: 2rem;
-}
-
-#federados .box-table .table-content ul li {
-    list-style: none;
-    text-align: center;
-    padding-bottom: 1rem;
-    font-weight: 600;
-}
-
-#federados .box-table .table-header h4 {
-    color: #ffffff;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
-#federados .box-table:nth-child(1) .table-header {
-    /* background-image: linear-gradient(to right, rgba(0,172,217,0.62), rgba(105,240,174,0.52)), url('../images/meninas2.webp'); */
-    background-image: url('../images/meninas2.webp');
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-    color: #ffffff;
-    position: relative;
-    background-size: 100%;
-    
-}
-
-#federados .box-table:nth-child(2) .table-header {
-    /* background-image: linear-gradient(to right, rgba(0,172,217,0.62), rgba(105,240,174,0.52)), url('../images/meninos.jpg'); */
-    background-image: url('../images/meninos.jpg');
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-    color: #ffffff;
-    position: relative;
-    background-size: 100%;
-}
-
+  .federadosMasculinos:hover .federadosMasculinos-title {
+      display: none;
+  }
+ 
 
 /**********************    treinos style    ***********************/
 
@@ -478,10 +575,10 @@ h2.section-title-heading {
     position: absolute;
     background-color: #ffffff;
     width: 100%;
-    height: 5%;
+    height: 6%;
     transform: skewY(-1deg);
     transform-origin: top right;
-    top: -3rem;
+    top: -2rem;
     right: 0;
     left: 0;
 }
@@ -502,83 +599,70 @@ h2.section-title-heading {
     padding-right: 0 ;
 }
 
-#treinos .box-table .table-header h4 {
-    color: var(--section-title-color-dark);
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    font-weight: 600;
-}
 
-#treinos .box-table .table-content {
-    margin-top: 2rem;
-}
-
-#treinos .box-table .table-content ul li {
-    list-style: none;
+.cardTreino-1-title, .cardTreino-2-title, .cardTreino-3-title {
+    position: absolute;
+    top: 35%;
+    left: 0;
     text-align: center;
-    padding-bottom: 1rem;
-    font-weight: 600;
-}
-
-
-#treinos .table-header {
-    margin: 0;
     width: 100%;
-}
+    z-index: 99;
+    transition: all 0.3s;
+  }
+  
+  .cardTreino-1-description, .cardTreino-2-description, .cardTreino-3-description{
+    width: 100%;
+    top: 15%;
+    position: absolute;
+    bottom: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    opacity: 0;
+    left: 0;
+    text-align: center;
+    z-index: 99;
+    transition: all 0.3s;
+  }
+  
+  .cardTreino-1:hover .cardTreino-1-title, .cardTreino-2:hover .cardTreino-2-title, .cardTreino-3:hover .cardTreino-3-title{
+    transform: translateY(-1.5rem);
+    display: none;
+  }
+  
+  .cardTreino-1:hover .cardTreino-1-description, .cardTreino-2:hover .cardTreino-2-description, .cardTreino-3:hover .cardTreino-3-description{
+    bottom: 0.5rem;
+    opacity: 1;
+  }
 
-#treinos .box-table .table-header {
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-}
-
-#treinos .box-table:nth-child(1) .table-header {
+/* card 1 ============================== */
+.cardTreino-1 .hover-overlay {
     background-image: linear-gradient(to right, rgba(0,172,217,0.62), rgba(105,240,174,0.52)), url('../images/miudos.jpg');
-    /* background: linear-gradient(to right, rgba(235, 136, 7, 0.62), rgba(233, 229, 8, 0.52)); */
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-    color: #ffffff;
-    position: relative;
-}
+    /* background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)); */
+  }
+ 
+  .cardTreino-1:hover .hover-overlay {
+    background-image: linear-gradient(to right, rgba(0,172,217,0.62), rgba(105,240,174,0.52)), url('../images/miudos.jpg');
+  }
 
-#treinos .box-table:nth-child(1) .table-header h4 {
-    color: #ffffff;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
-#treinos .box-table:nth-child(2) .table-header {
+/* card 2 ============================== */
+.cardTreino-2 .hover-overlay {
     background-image: linear-gradient(to right, rgba(0,172,217,0.62), rgba(105,240,174,0.52)), url('../images/mata_medos.webp');
-    /* background: linear-gradient(to right, rgba(0,172,217,0.62), rgba(105,240,174,0.52)); */
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-    color: #ffffff;
-    position: relative;
-}
+    /* background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)); */
+  }
+ 
+  .cardTreino-2:hover .hover-overlay {
+    background-image: linear-gradient(to right, rgba(0,172,217,0.62), rgba(105,240,174,0.52)), url('../images/mata_medos.webp');
+  }
 
-#treinos .box-table:nth-child(2) .table-header h4 {
-    color: #ffffff;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
-#treinos .box-table:nth-child(3) .table-header {
+/* card 3 ============================== */
+.cardTreino-3 .hover-overlay {
     background-image: linear-gradient(to right, rgba(0,172,217,0.62), rgba(105,240,174,0.52)), url('../images/parquedapaz.jpg');
-    /* background: linear-gradient(to right, rgba(0,172,217,0.62), rgba(105,240,174,0.52)); */
-    padding-top: 6rem;
-    padding-bottom: 6.2rem;
-    color: #ffffff;
-    position: relative;
-}
-
-#treinos .box-table:nth-child(3) .table-header h4 {
-    color: #ffffff;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
+    /* background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)); */
+  }
+ 
+  .cardTreino-3:hover .hover-overlay {
+    background-image: linear-gradient(to right, rgba(0,172,217,0.62), rgba(105,240,174,0.52)), url('../images/parquedapaz.jpg');
+  }
 
 
 /**********************    protocolos style    ***********************/
@@ -795,21 +879,29 @@ h2.section-title-heading {
 
 #footer .footer-logo img {
     margin-top: -4.5rem;
-    width: 25%;
-    margin-left: 15rem;
+    width: 15%;
+    margin-left: 41%;
 }
 
 #footer .social-icons {
     margin-top: -1rem;
+    text-align: center;
 }
 
 #footer .social-icons a {
     margin-right: 10px;
     color: #8d8c8c;
+    text-align: center;
 }
 
 .copyright p {
     margin-top: 1rem;
     color: #ffffff;
+    text-align: center;
     font-size: .9rem;
 }
+
+  
+  
+  
+  

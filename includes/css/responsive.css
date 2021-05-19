@@ -170,10 +170,9 @@
         }
 }
 
-@media(max-width: 380px) {
+@media(max-width: 420px) {
 
     body { 
-        width: 127%;
         margin: 0;
         padding: 0;
     }
@@ -210,6 +209,7 @@
         height: 5%;
     }
 
+
     /*about*/
 
     #about .section-title::after {
@@ -233,7 +233,18 @@
         top: 75px;
     }
 
-    #treinos .box-table:nth-child(1) .table-header {
+     /*treinos*/
+    
+     .hover{
+        margin-bottom: 2rem;
+        padding-bottom: 80%;
+    }
+
+    #treinos::before {
+        top: -2.5rem;
+    }
+
+    /* #treinos .box-table:nth-child(1) .table-header {
         background-size: 105%;
         padding-top: 58px;
     padding-bottom: 6px; 
@@ -248,7 +259,7 @@
         background-size: 105%;
         padding-top: 58px;
     padding-bottom: 6px; 
-    }
+    } */
 
     
     h2.section-title-heading {
@@ -274,28 +285,7 @@
         left: 0;
     }
 
-    #federados .box-table {
-        width: calc(80%/1);
-        margin-top: 2rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    /*treinos*/
-    #treinos .section-title::after {
-        width: 25%;
-        top: 71px;
-    }
-
-    
-    #treinos .h2 {
-        font-size: 2rem;
-        padding-bottom: 1rem;
-    }
-
-    #treinos::before {
-        top: -2.5rem;
-    }
+   
 
     /*contacto*/
 
