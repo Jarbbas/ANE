@@ -17,17 +17,15 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-            <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light fixed-top">
+            <div class="container-fluid">
                 <a class="navbar-brand"><img src="includes/images/logo.webp " class="img-logo"
                         alt="Responsive image"></a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                    data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
                             <a class="nav-link" href="#hero">Inicio </a>
@@ -52,7 +50,6 @@
                         </li>
                     </ul>
                 </div>
-
             </div>
         </nav>
     </header>
@@ -115,54 +112,59 @@
                 <div id="carousel" class="container">
                     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
                         </div>
                         <!-- primeiro slice do carousel -->
                         <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img class="image-slide first-slide" >
-                            <div class="container">
-                              <div class="carousel-caption text-start">
-                                <h1>Regional de Corta Mato</h1>
-                                <p style="color: azure;">Some representative placeholder content for the first slide of the carousel.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">Ler artigo</a></p>
-                              </div>
+                            <div class="carousel-item active">
+                                <img class="image-slide first-slide">
+                                <div class="container">
+                                    <div class="carousel-caption text-start">
+                                        <h1>Regional de Corta Mato</h1>
+                                        <p style="color: azure;">Some representative placeholder content for the first
+                                            slide of the carousel.</p>
+                                        <p><a class="btn btn-lg btn-primary" href="#">Ler artigo</a></p>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
-                        <!-- segundo slice do carousel -->
-                          <div class="carousel-item">
-                            <iframe
-                                src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fseixaliada%2Fvideos%2F792175754970029%2F&show_text=0&width=1000"
-                                width="100%" height="100%" style="border:none; overflow:hidden" scrolling="no"
-                                frameborder="0" allowTransparency="true" allowFullScreen="true"
-                                alt="Second slide">
-                            </iframe>
-                          </div>
-                        <!-- terceiro slice do carousel -->
-                          <div class="carousel-item">
-                            <img class="image-slide third-slide">
-                            <div class="container">
-                              <div class="carousel-caption text-end">
-                                <h1>Vencedores TAS 2019</h1>
-                                <p style="color: azure;">Equipa vencedora do Trofeu de Atletismo do Seixal em
-                                    2019 com uma esmagadora pontuação sobre a concorrência.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">Ler artigo</a></p>
-                              </div>
+                            <!-- segundo slice do carousel -->
+                            <div class="carousel-item">
+                                <iframe
+                                    src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fseixaliada%2Fvideos%2F792175754970029%2F&show_text=0&width=1000"
+                                    width="100%" height="100%" style="border:none; overflow:hidden" scrolling="no"
+                                    frameborder="0" allowTransparency="true" allowFullScreen="true" alt="Second slide">
+                                </iframe>
                             </div>
-                          </div>
+                            <!-- terceiro slice do carousel -->
+                            <div class="carousel-item">
+                                <img class="image-slide third-slide">
+                                <div class="container">
+                                    <div class="carousel-caption text-end">
+                                        <h1>Vencedores TAS 2019</h1>
+                                        <p style="color: azure;">Equipa vencedora do Trofeu de Atletismo do Seixal em
+                                            2019 com uma esmagadora pontuação sobre a concorrência.</p>
+                                        <p><a class="btn btn-lg btn-primary" href="#">Ler artigo</a></p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                         <!-- buttons do carousel -->
-                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
+                        <!-- buttons do carousel -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
+                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
                         </button>
-                      </div>
+                    </div>
                 </div>
 
                 <div class="row">
@@ -288,9 +290,7 @@
                         <p>VOGAL</p>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </section>
 
@@ -362,9 +362,7 @@
                             nacionais individuais e outro record nacional de clubes na estafeta 4x400(F40)..</p>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </section>
 
@@ -376,51 +374,48 @@
                 <h2 class="text-center">Atletismo Federado</h2>
             </div>
             <div class="row federados-title  justify-content-center">
-                <p>
-                    A Natureza ensina é já uma das mais relevantes equipas de atletismo veterano de Portugal
-                </p>
+                <p>A Natureza ensina é já uma das mais relevantes equipas de atletismo veterano de Portugal</p>
             </div>
 
             <div class="row justify-content-center">
 
                 <div class="col-lg-6 mb-3 mb-lg-0">
-                    <div class="hover federadosMasculinos text-white rounded">
-                      <div class="hover-overlay"></div>
-                      <div class="federadosMasculinos-content">
-                        <h3 class="federadosMasculinos-title text-uppercase font-weight-bold mb-0"><span class="font-weight-light">Equipa </span>Masculina</h3>
-                        <p class="federadosMasculinos-description mb-0 small">
-                            - 4º Campeonato Nacional de Veteranos de Pista Coberta, 2020<br>
-                            - 3º regionais veteranos em corta-mato e estrada, 2019<br>
-                            - Campeões regionais veteranos em corta-mato, 2017 <br>
-                            - Vice-Campeões regionais veteranos em Estrada, 2016<br>
-                        </p>
-                      </div>
+                    <div class="hover-federados federadosMasculinos text-white rounded">
+                        <div class="hover-overlay"></div>
+                        <div class="federadosMasculinos-content">
+                            <h3 class="federadosMasculinos-title text-uppercase font-weight-bold mb-0"><span
+                                    class="font-weight-light">Equipa </span>Masculina</h3>
+                            <p class="federadosMasculinos-description mb-0 small">
+                                - 4º Campeonato Nacional de Veteranos de Pista Coberta, 2020<br>
+                                - 3º regionais veteranos em corta-mato e estrada, 2019<br>
+                                - Campeões regionais veteranos em corta-mato, 2017 <br>
+                                - Vice-Campeões regionais veteranos em Estrada, 2016<br>
+                            </p>
+                        </div>
                     </div>
-                  </div>
+                </div> <!-- ./cartão federados Masculinos -->
 
                 <div class="col-lg-6 mb-3 mb-lg-0">
-                    <div class="hover federadosFeminios text-white rounded">
-                      <div class="hover-overlay"></div>
-                      <div class="federadosFeminios-content">
-                        <h3 class="federadosFeminios-title text-uppercase font-weight-bold mb-0"><span class="font-weight-light">Equipa </span>Feminina</h3>
-                        <p class="federadosFeminios-description mb-0 small">
-                            - Campeãs Nacionais Veteranas de Corta-Mato Curto, 2020<br>
-                            - Vice-campeãs Nacionais Veteranas de Estrada, 2020<br>
-                            - Campeãs regionais veteranas de estrada, 2019<br>
-                            - Bi-campeãs regionais veteranas de corta-mato, 2018 e 2019<br>
-                            - Campeãs regionais absolutas em estrada, 2017<br>
-                            - Vice-Campeãs regionais absolutas corta-mato 2017<br>
-                        </p>
-                      </div>
+                    <div class="hover-federados federadosFeminios text-white rounded">
+                        <div class="hover-overlay"></div>
+                        <div class="federadosFeminios-content">
+                            <h3 class="federadosFeminios-title text-uppercase font-weight-bold mb-0"><span
+                                    class="font-weight-light">Equipa </span>Feminina</h3>
+                            <p class="federadosFeminios-description mb-0 small">
+                                - Campeãs Nacionais Veteranas de Corta-Mato Curto, 2020<br>
+                                - Vice-campeãs Nacionais Veteranas de Estrada, 2020<br>
+                                - Campeãs regionais veteranas de estrada, 2019<br>
+                                - Bi-campeãs regionais veteranas de corta-mato, 2018 e 2019<br>
+                                - Campeãs regionais absolutas em estrada, 2017<br>
+                                - Vice-Campeãs regionais absolutas corta-mato 2017<br>
+                            </p>
+                        </div>
                     </div>
-                  </div>
+                </div> <!-- ./cartão federados Femininos -->
 
-            </div>
-
-        </div>
-
-
-    </section>
+            </div> <!-- ./row -->
+        </div> <!-- ./container -->
+    </section> <!-- ./secção dos federados -->
 
     <!-- treinos section -->
 
@@ -430,65 +425,70 @@
             <div class="row section-title justify-content-center">
                 <h2 class="section-title-heading">treinos</h2>
             </div>
-            <div class="row">
+            <div class="row justify-content-center">
                 <h3 class="text-center">Treino variado de força, resistência e de recuperação.</h3>
-                <p class="text-center">Durante a semana estamos no Parque da Paz e Quinta do Marialva e ao fim de semana no Parque da Paz e
+                <p class="text-center">Durante a semana estamos no Parque da Paz e Quinta do Marialva e ao fim de semana
+                    no Parque da Paz e
                     na Mata dos Medos (Até Janeiro).</p>
             </div>
 
             <div class="row justify-content-center">
 
-                      <!-- DEMO 1 Item-->
-                      <div class="col-md">
-                        <div class="hover cardTreino-1 text-white rounded">
-                          <div class="hover-overlay"></div>
-                          <div class="cardTreino-1-content px-5 py-4">
-                            <h3 class="cardTreino-1-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Pista Carla Sacramento</h3>
+                <!-- card 1 Item-->
+                <div class="col-md">
+                    <div class="hover-treinos cardTreino-1 text-white rounded">
+                        <div class="hover-overlay"></div>
+                        <div class="cardTreino-1-content">
+                            <h3 class="cardTreino-1-title text-uppercase font-weight-bold mb-0"> <span
+                                    class="font-weight-light">Pista Carla Sacramento</h3>
                             <p class="cardTreino-1-description mb-0">
-                                Todas as 4ª feiras pelas 18:45 até as 20:30, <br>aquecimento, exercícios de flexibilidade e 
+                                Todas as 4ª feiras pelas 18:45 até as 20:30, <br>aquecimento, exercícios de
+                                flexibilidade e
                                 treino intervalado adaptado ao nível competitivo dos atletas. <br>
-                                As 4ª feiras e 6ª feiras treino de formação para crianças e jovens pelas 18:45 até as 20:30.<br>
-                                Treino orientado por David Rosa, director desportivo e técnico da Associação 
-                                </p>
-                          </div>
+                                As 4ª feiras e 6ª feiras treino de formação para crianças e jovens pelas 18:45 até as
+                                20:30.<br>
+                                Treino orientado por David Rosa, director desportivo e técnico da Associação
+                            </p>
                         </div>
-                      </div>
+                    </div>
+                </div><!-- ./card treinos 1 -->
 
-                      <!-- DEMO 2 Item-->
-                      <div class="col-md">
-                        <div class="hover cardTreino-2 text-white rounded">
-                          <div class="hover-overlay"></div>
-                          <div class="cardTreino-2-content px-5 py-4">
-                            <h3 class="cardTreino-2-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Santuário <br>ANE</h3>
+                <!-- card 2 -->
+                <div class="col-md">
+                    <div class="hover-treinos cardTreino-2 text-white rounded">
+                        <div class="hover-overlay"></div>
+                        <div class="cardTreino-2-content">
+                            <h3 class="cardTreino-2-title text-uppercase font-weight-bold mb-0"> <span
+                                    class="font-weight-light">Santuário <br>ANE</h3>
                             <p class="cardTreino-2-description mb-0">
                                 Domingos bem passados em treino de circuitos,estão todos convidados a aparecer nesta<br>
                                 prova de grande superação. Quem o faz nunca mais esquece. <br>
                                 As areias (Mata dos Medos) lá estarão implacáveis à nossa espera!<br>
-                                Uma tareia, mesmo para os mais fortes, mas que faz maravilhas 
-                                </p>
-                          </div>
+                                Uma tareia, mesmo para os mais fortes, mas que faz maravilhas
+                            </p>
                         </div>
-                      </div>
+                    </div>
+                </div> <!-- ./card treinos 2 -->
 
-                      <!-- DEMO 2 Item-->
-                      <div class="col-md">
-                        <div class="hover cardTreino-3 text-white rounded">
-                          <div class="hover-overlay"></div>
-                          <div class="cardTreino-3-content px-5 py-4">
-                            <h3 class="cardTreino-3-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Marialva<br>Parque da Paz <br> Baia do Seixal</h3>
+                <!-- card 3 -->
+                <div class="col-md">
+                    <div class="hover-treinos cardTreino-3 text-white rounded">
+                        <div class="hover-overlay"></div>
+                        <div class="cardTreino-3-content">
+                            <h3 class="cardTreino-3-title text-uppercase font-weight-bold mb-0"> <span
+                                    class="font-weight-light">Marialva<br>Parque da Paz <br> Baia do Seixal</h3>
                             <p class="cardTreino-3-description mb-0">
                                 Não importa onde seja, temos atelas espalhados por todo o lado<br>
                                 Seja a fazer os seus treinos longos, circuitos, FartLek ou rápidos <br>
                                 Vemos sempre o simbolo da ANE, ao peito de alguém<br><br>
                                 #Todos contam!
-                                </p>
-                          </div>
+                            </p>
                         </div>
-                      </div>
+                    </div>
+                </div> <!-- ./card treinos 3 -->
 
-            </div>
-
-        </div>
+            </div> <!-- ./row -->
+        </div> <!-- ./container -->
     </section>
 
     <!--protocolos -->
@@ -496,7 +496,7 @@
     <section id="protocolos">
 
         <div class="container">
-
+            
             <div class="row protocolos-title justify-content-center">
                 <h2 class="section-title-heading">PROTOCOLOS</h2>
             </div>
@@ -506,68 +506,100 @@
 
             <div class="row justify-content-center">
 
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-sm-3">
-                            <div class="content">
-                                <img class="rounded-circle" src="includes/images/alemtejoprotocolo.jpg"
-                                    alt="Generic placeholder image" width="140" height="140">
-                                <h2>Além Tejo</h2>
-                                <p>Este protocolo permite aos sócios da ANE descontos de 10% em toda a gama de produtos
-                                    vendidos pela farmácia mediante pronto pagamento.</p>
-                                <a class="btn btn-info" href="https://www.facebook.com/farmaciaalemtejo"
-                                    role="button">Mais detalhe »</a>
+               <!-- card-->
+            <div class="col-md ">
+                <div class="maincard">
+                    <div class="thecard">
+                        <div class="thefront text-center"> <img src="includes/images/alemtejoprotocolo.jpg"
+                                class="rounded-circle" width="100">
+                            <h3 class="mt-2 mb-0">Além Tejo</h3> <small class="card-info">Mais informações</small>
+                        </div>
+                        <div class="theback text-center">
+                            <h4>Além Tejo</h4>
+                            <p class="about text-justify">Este protocolo permite aos sócios da ANE descontos de 10%
+                                em toda a gama de produtos
+                                vendidos pela farmácia mediante pronto pagamento.</p>
+                            <div class="px-5">
+                                <a href="https://www.facebook.com/farmaciaalemtejo"><small class="card-info"><i
+                                            class="fab fa-facebook"></i> Visitar</small></a>
                             </div>
                         </div>
-
-                        
-                        <!--/.col-sm-3-->
-
-                        <div class="col-sm-3">
-                            <div class="content">
-                                <img class="rounded-circle" src="includes/images/viopticaprotocolo.png"
-                                    alt="Generic placeholder image" width="140" height="140">
-                                <h2>Vioptica</h2>
-                                <p>Este protocolo permite aos sócios da ANE descontos relevantes em armações, lentes, e
-                                    óculos de sol.</p>
-                                <a class="btn btn-info" href="https://www.facebook.com/vioptica" role="button">Mais
-                                    detalhe »</a>
-                            </div>
-                        </div><!-- /.col-sm-3 -->
-
-                        <div class="col-sm-3">
-                            <div class="content">
-                                <img class="rounded-circle" src="includes/images/dlclinicaprotocolo.jpg"
-                                    alt="Generic placeholder image" width="140" height="140">
-                                <h2>Clinica Dentária</h2>
-                                <p>Este protocolo permite aos sócios da ANE descontos significativos numa série de
-                                    actividades de saúde oral que vão da medicina preventiva, à restauração, extracção e
-                                    desvitalização.</p>
-                                <a class="btn btn-info" href="https://www.facebook.com/dlclinicadentaria"
-                                    role="button">Mais detalhe »</a>
-                            </div>
-                        </div><!-- /.col-sm-3 -->
-
-                        <div class="col-sm-3">
-                            <div class="content">
-                                <img class="rounded-circle" src="includes/images/fisioprotocolo.jpg"
-                                    alt="Generic placeholder image" width="140" height="140">
-                                <h2>Severina Cravid</h2>
-                                <p>Este protocolo estabelece que os serviços de massagem de recuperação e prevenção de
-                                    lesões serão realizados para os sócios da ANE na pista Carla Sacramento as 3ªs e 5ª
-                                    feiras, a partir das 19:30.</p>
-                                <a class="btn btn-info"
-                                    href="https://www.facebook.com/Look-Good-Fisioterapia-Severina-Cravid-552645918277885"
-                                    role="button">Mais detalhe »</a>
-                            </div>
-                        </div><!-- /.col-sm-3 -->
                     </div>
-
                 </div>
-            </div>
+            </div><!-- ./card-->
 
+            <!-- card-->
+            <div class="col-md">
+                <div class="maincard">
+                    <div class="thecard">
+                        <div class="thefront text-center"> <img src="includes/images/viopticaprotocolo.png"
+                                class="rounded-circle" width="100">
+                            <h3 class="mt-2 mb-0">Vioptica</h3> <small class="card-info">Mais informações</small>
+                        </div>
+                        <div class="theback text-center">
+                            <h4>Vioptica</h4>
+                            <p class="about text-justify">Este protocolo permite aos sócios da ANE descontos
+                                relevantes em armações, lentes, e
+                                óculos de sol</p>
+                            <div class="px-5">
+                                <a href="https://www.facebook.com/vioptica"><small class="card-info"><i
+                                            class="fab fa-facebook"></i> Visitar</small></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- ./card-->
 
+            <!-- card-->
+            <div class="col-md">
+                <div class="maincard">
+                    <div class="thecard">
+                        <div class="thefront text-center"> <img src="includes/images/dlclinicaprotocolo.jpg"
+                                class="rounded-circle" width="100">
+                            <h3 class="mt-2 mb-0">Clinica Dentária</h3> <small class="card-info">Mais
+                                informações</small>
+                        </div>
+                        <div class="theback text-center">
+                            <h4>Clinica Dentária</h4>
+                            <p class="about text-justify">Este protocolo permite aos sócios da ANE descontos
+                                significativos numa série de
+                                actividades de saúde oral que vão da medicina preventiva, à restauração, extracção e
+                                desvitalização.</p>
+                            <div class="px-5">
+                                <a href="https://www.facebook.com/dlclinicadentaria"><small class="card-info"><i
+                                            class="fab fa-facebook"></i> Visitar</small></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- ./card-->
+            <!-- card-->
+            <div class="col-md">
+                <div class="maincard">
+                    <div class="thecard">
+                        <div class="thefront text-center"> <img src="includes/images/fisioprotocolo.jpg"
+                                class="rounded-circle" width="100">
+                            <h3 class="mt-2 mb-0">Severina Cravid</h3> <small class="card-info">Mais
+                                informações</small>
+                        </div>
+                        <div class="theback text-center">
+                            <h4>Severina Cravid</h4>
+                            <p class="about text-justify">Este protocolo estabelece que os serviços de massagem de
+                                recuperação e prevenção de
+                                lesões serão realizados para os sócios da ANE na pista Carla Sacramento as 3ªs e 5ª
+                                feiras, a partir das 19:30.</p>
+                            <div class="px-5">
+                                <a
+                                    href="https://www.facebook.com/Look-Good-Fisioterapia-Severina-Cravid-552645918277885"><small
+                                        class="card-info"><i class="fab fa-facebook"></i> Visitar</small></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- ./card-->
+                
+            </div> <!-- ./row-->
+        </div> <!-- ./container-->
     </section>
 
     <!-- contact section -->

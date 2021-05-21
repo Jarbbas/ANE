@@ -18,6 +18,10 @@
 
         /*hero sction*/
 
+        #hero::after {
+            height: 6%;
+        }
+
         .main-hero-content h1 p {
             text-align: center;
         }
@@ -39,12 +43,12 @@
         #about::after {
             content: '';
             position: absolute;
-            background-color: #fafafa;
+            background-color: #f8f1f1;
             width: 100%;
-            height: 2%;
+            height: 1%;
             transform: skewY(-2deg);
             transform-origin: bottom right;
-            bottom: -8rem;
+            bottom: -5rem;
             right: 0;
             left: 0;
         }
@@ -72,12 +76,20 @@
 
         /*treinos */
 
+        .hover-treinos {
+            margin-bottom: 2rem;
+        }
+
+        .cardTreino-1-description, .cardTreino-2-description, .cardTreino-3-description {
+            top: 29%; 
+        }
+
         #treinos::before {
             content: '';
             position: absolute;
             background-color: #ffffff;
             width: 100%;
-            height: -8%;
+            height: 0%;
             transform: skewY(-1deg);
             transform-origin: top right;
             top: 1rem;
@@ -103,32 +115,23 @@
         }
 
         /*treinos sction*/
-        #treinos .box-table {
-            width: calc(80%/1);
-            margin-top: 2rem;
-            margin-left: auto;
-            margin-right: auto;
-        }
 
-        #treinos .box-table:nth-child(1){
-            margin-top: -2rem;
-        }
-
-        #treinos .box-table:nth-child(2) .table-header {
-            background-size: 104%;
-        }
 
         /*federados*/
+
+        #federados {
+            padding-bottom: 3rem;
+        }
 
         #federados::before {
             content: '';
             position: absolute;
-            background-color: #fafafa;
+            background-color: f8f1f1;
             width: 100%;
-            height: 9%;
+            height: 4%;
             transform: skewY(-2deg);
             transform-origin: top right;
-            top: -7rem;
+            top: -2rem;
             right: 0;
             left: 0;
         }
@@ -143,9 +146,23 @@
 
         /*protocolos*/
 
+        .maincard {
+            margin-left: 25%;
+            margin-bottom: 3rem;
+            width: 50%;
+        }
+
         #protocolos::before {
             height: 6%;
+            top: -2rem;
         }
+
+        #protocolos {
+            height: auto;
+            padding-top: 2rem;
+            padding-bottom: 5rem;
+            padding-left: auto;
+    }   
 
         #protocolos .box-table {
             width: calc(80%/1);
@@ -243,25 +260,7 @@
     #treinos::before {
         top: -2.5rem;
     }
-
-    /* #treinos .box-table:nth-child(1) .table-header {
-        background-size: 105%;
-        padding-top: 58px;
-    padding-bottom: 6px; 
-    }
-
-    #treinos .box-table:nth-child(2) .table-header {
-        padding-top: 58px;
-        padding-bottom: 6px; 
-    }
-
-    #treinos .box-table:nth-child(3) .table-header {
-        background-size: 105%;
-        padding-top: 58px;
-    padding-bottom: 6px; 
-    } */
-
-    
+   
     h2.section-title-heading {
         font-size: 1.7rem;
     }
@@ -272,6 +271,11 @@
     }
 
     /*federados*/
+
+    #federados {
+        padding-bottom: 3rem;
+    }
+
     #federados::before {
         content: '';
         position: absolute;
@@ -285,7 +289,7 @@
         left: 0;
     }
 
-   
+
 
     /*contacto*/
 
