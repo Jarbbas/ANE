@@ -48,7 +48,7 @@
             height: 1%;
             transform: skewY(-2deg);
             transform-origin: bottom right;
-            bottom: -5rem;
+            bottom: -3rem;
             right: 0;
             left: 0;
         }
@@ -109,8 +109,8 @@
 
         #contact {
             background-color: #f0f1f3;
-            padding-bottom: 5rem;
-            padding-top: 3rem;
+            /* padding-bottom: 5rem; */
+            /* padding-top: 0rem; */
             position: relative;
         }
 
@@ -147,14 +147,14 @@
         /*protocolos*/
 
         .maincard {
-            margin-left: 25%;
+            margin-left: 21%;
             margin-bottom: 3rem;
-            width: 50%;
+            width: 60%;
         }
 
         #protocolos::before {
             height: 6%;
-            top: -2rem;
+            top: -4rem;
         }
 
         #protocolos {
@@ -188,7 +188,7 @@
 }
 
 @media(max-width: 420px) {
-
+   
     body { 
         margin: 0;
         padding: 0;
@@ -201,13 +201,17 @@
 
     p {
         text-align: center;
-        padding-right: 2rem;
-        padding-left: 2rem;
+        /* padding-right: 2rem;
+        padding-left: 2rem; */
     }
 
     .navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid, .navbar-expand-lg>.container-lg, .navbar-expand-lg>.container-md, .navbar-expand-lg>.container-sm, .navbar-expand-lg>.container-xl {
         padding-right: 17%;
          padding-left: 0; 
+    }
+
+    .img-logo {
+        margin-left: 0rem;
     }
     
     .main-hero-content h1 {
@@ -233,14 +237,17 @@
         width: 40%;
         top: 70px;
     }
+
     #about h4 {
-        padding-left: 2.5rem;
+        padding-top: 1rem;
+        align-content: center;
+        text-align: center;
     }
 
     /*destaque*/
         
     #destaque {
-        background-color: #fafafa;
+        background-color: #f8f1f1;
         padding-bottom: 0rem;
         margin-top: 0rem;
     }
@@ -266,8 +273,7 @@
     }
 
     .section-title::after {
-        width: 40%;
-        top: 113px;
+        top: 4rem;
     }
 
     /*federados*/
@@ -279,7 +285,7 @@
     #federados::before {
         content: '';
         position: absolute;
-        background-color: #ffffff;
+        background-color: #f8f1f1;
         width: 100%;
         height: 2%;
         transform: skewY(-1deg);
@@ -289,7 +295,18 @@
         left: 0;
     }
 
+    .hover-federados {
+        padding-bottom: 83%;
+    }
 
+    .federadosMasculinos-description {
+        left: 0; 
+        top: 4rem;
+    }
+    .federadosFeminios-description {
+        top: 1rem;
+        left: 0rem;
+    }
 
     /*contacto*/
 
@@ -311,7 +328,7 @@
     #footer .footer-logo img {
         margin-top: -6rem;
         width: 28%;
-        margin-left: 9rem;
+        margin-left: 7rem;
     }
 
 }
