@@ -1,3 +1,24 @@
+@media(max-width: 2560px) {
+    #hero {
+        padding-bottom: 42rem;
+    }
+
+    #treinos::before {
+        height: 15%;
+        top: -5rem;
+    }
+
+    #protocolos::before {
+        top: -6rem;
+    }
+
+    #contact::before {
+        height: 17%;
+        top: -6.2rem;
+    }
+
+}
+
 @media(max-width: 993px) {
 
         .navbar-collapse {
@@ -78,10 +99,19 @@
 
         .hover-treinos {
             margin-bottom: 2rem;
+            padding-bottom: 88%;
         }
 
-        .cardTreino-1-description, .cardTreino-2-description, .cardTreino-3-description {
-            top: 29%; 
+        .cardTreino-1-description{
+            top: 5%; 
+        }
+
+        .cardTreino-2-description {
+            top: 15%; 
+        }
+
+        .cardTreino-3-description {
+            top: 20%; 
         }
 
         #treinos::before {
