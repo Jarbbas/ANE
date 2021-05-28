@@ -1,20 +1,45 @@
 @media(max-width: 2560px) {
     #hero {
-        padding-bottom: 42rem;
+        padding-bottom: 15rem;
+        background-size: cover;
+    }
+
+    #hero::after {
+        height: 7%;
     }
 
     #treinos::before {
-        height: 15%;
-        top: -5rem;
+        height: 14%;
+        top: -2rem;
     }
 
     #protocolos::before {
         top: -6rem;
     }
+    
+    #protocolos {
+        height: 30rem;
+    }
 
     #contact::before {
-        height: 17%;
-        top: -6.2rem;
+        height: 11%;
+        top: -4rem;
+    }
+    
+}
+
+@media (min-width: 1440px) {
+
+    #hero {
+        background-size: cover;
+    }
+
+    .federadosMasculinos-description, .federadosFeminios-description {
+        font-size: 129%;
+    }
+
+    .federadosFeminios-description,  .federadosMasculinos-description {
+        top: 7rem;
     }
 
 }
@@ -22,7 +47,7 @@
 @media(max-width: 993px) {
 
         .navbar-collapse {
-            background: rgba(0, 172, 217, 1);
+            background-color: transparent;
             padding-left: 1rem;
         }
 
@@ -36,6 +61,60 @@
 }
 
 @media(max-width: 768px) {
+
+    .navbar-collapse {
+        padding-right: 5rem;
+    }
+
+    .img-logo {
+        margin-left: 1rem;
+    }
+
+    /*Federados*/
+
+    .hover-federados {
+        padding-bottom: 38%;
+    }
+
+    .federadosMasculinos-title, .federadosFeminios-title {
+        font-size: 3rem;
+    }
+
+    .federadosMasculinos-description {
+    width: 100%;
+    position: absolute;
+    top: 5rem;
+    left: 1rem;
+    text-align: left;
+    border-left: 3px solid #fff;
+    padding: 0 1rem;
+    z-index: 99;
+    transform: translateX(-1.5rem);
+    opacity: 0;
+    transition: all 0.3s;
+    font-size: 1rem;
+}
+    
+
+    .federadosFeminios-description {
+        font-size: 1rem;
+    }
+
+    .maincard {
+        position: relative;
+        height: 20rem;
+        margin-left: 0%;
+        width: 100%;
+    }
+    
+    .thefront {
+        padding-top: 4rem;
+    }
+
+    #footer .footer-logo img {
+        margin-left: 18rem;
+        margin-bottom: 1rem;
+    }
 
         /*hero sction*/
 
@@ -86,32 +165,22 @@
             padding-bottom: 2rem;
         }
 
-        /*federados*/
-
-        #federados .box-table {
-            width: calc(80%/1);
-            margin-top: 2rem;
-            margin-left: auto;
-            margin-right: auto;
-        }
 
         /*treinos */
 
         .hover-treinos {
-            margin-bottom: 2rem;
-            padding-bottom: 88%;
+            /* margin-bottom: -7rem; */
+            margin-bottom: -2rem;
+            height: 50%;
+            font-size: 11px;
         }
 
-        .cardTreino-1-description{
-            top: 5%; 
+        .cardTreino-1-title, .cardTreino-2-title, .cardTreino-3-title {
+            font-size: 1rem;
         }
 
-        .cardTreino-2-description {
-            top: 15%; 
-        }
-
-        .cardTreino-3-description {
-            top: 20%; 
+        #treinos p {
+            font-size: 0.5rem;
         }
 
         #treinos::before {
@@ -127,11 +196,6 @@
             left: 0;
         }
 
-        #treinos p {
-            margin-top: 0;
-            margin-bottom: 3rem;
-        }
-
         /*contact sction*/
         #contact .adress {
             margin-top: 2rem;
@@ -144,10 +208,14 @@
             position: relative;
         }
 
-        /*treinos sction*/
+          /*federados*/
 
-
-        /*federados*/
+          #federados .box-table {
+            width: calc(80%/1);
+            margin-top: 2rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
         #federados {
             padding-bottom: 3rem;
@@ -177,9 +245,9 @@
         /*protocolos*/
 
         .maincard {
-            margin-left: 21%;
+            margin-left: 1%;
             margin-bottom: 3rem;
-            width: 60%;
+            width: 100%;
         }
 
         #protocolos::before {
@@ -213,12 +281,17 @@
         }
 
         #footer .footer-logo img {
-            margin-left: 11rem;
+            margin-left: 18rem;
         }
 }
 
 @media(max-width: 420px) {
-   
+
+    :root {
+        scroll-behavior: smooth;
+        /* width: 88%; */
+    }
+
     body { 
         margin: 0;
         padding: 0;
@@ -285,13 +358,32 @@
     #destaque .section-title::after {
         width: 40%;
         top: 75px;
-    }
+    } 
+
 
      /*treinos*/
     
      .hover{
         margin-bottom: 2rem;
         padding-bottom: 80%;
+    }
+
+   #treinos .hover-overlay {
+        height: 51%;
+    }
+
+    .cardTreino-1-title, .cardTreino-2-title, .cardTreino-3-title {
+        top: 18%;
+        font-size: 2rem;
+    }
+
+    .hover-treinos {
+        margin-bottom: -18rem;
+        padding-bottom: 191%;
+    }
+
+    #treinos p {
+        font-size: 1rem;
     }
 
     #treinos::before {
@@ -307,6 +399,10 @@
     }
 
     /*federados*/
+
+    .federadosMasculinos-title, .federadosFeminios-title {
+        font-size: 2rem;
+    }
 
     #federados {
         padding-bottom: 3rem;
@@ -326,22 +422,39 @@
     }
 
     .hover-federados {
-        padding-bottom: 83%;
+        padding-bottom: 90%;
+    }
+
+    .federadosMasculinos-title, .federadosFeminios-title {
+        font-size: 2rem;
     }
 
     .federadosMasculinos-description {
         left: 0; 
         top: 4rem;
+        font-size: 15px;
     }
     .federadosFeminios-description {
         top: 1rem;
         left: 0rem;
+        font-size: 15px;
     }
+
+    /*protocolos*/
+    .theback {
+        padding-top: 4rem;
+    }
+
+    .about {
+        font-size: 1rem;
+    }
+
 
     /*contacto*/
 
     #contact::before {
         height: 6%;
+        top: 0;
     }
     #contact .section-title::after {
         width: 40%;
